@@ -1,0 +1,7 @@
+﻿@model Snippy.App.Models.ViewModels.SnippetViewModel
+<div>
+    <h3>@Html.ActionLink(Model.Title, "Details", "Snippet", new {id = Model.Id}, new {})</h3>
+    <p class="btn-toolbar">
+        @Html.DisplayFor(s => s.Labels)
+    </p>
+</div>

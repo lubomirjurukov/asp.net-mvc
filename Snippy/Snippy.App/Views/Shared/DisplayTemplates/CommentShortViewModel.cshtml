@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNet.Identity
+@model Snippy.App.Models.ViewModels.CommentShortViewModel
+<div class="jumbotron">
+    <p>@Model.Content</p>
+    <p>
+        <span class="glyphicon glyphicon-user" aria-hidden="true"></span> @Model.Author.UserName on @Model.CreationDateTime.ToString("dd.MM.yyyy hh:mm:ss")<br/>
+        @if (Context.User.Identity.GetUserId() == Model.AuthorId)
+        {
+            @Html.ActionLink("X", "Delete", "Comment", new { id = Model.Id }, new { @class = "btn btn-default pull-right" })
+        }
+    </p>
+</div>

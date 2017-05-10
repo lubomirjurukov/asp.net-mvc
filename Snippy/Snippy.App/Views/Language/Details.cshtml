@@ -1,0 +1,8 @@
+﻿@model Snippy.App.Models.ViewModels.LanguageViewModel
+
+@{
+    ViewBag.Title = "Language " + Model.Name;
+}
+
+<h2>All Snippets for language<span class="btn btn-success">@Model.Name</span></h2><br />
+@Html.DisplayFor(l => l.Snippets)

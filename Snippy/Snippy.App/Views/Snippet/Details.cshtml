@@ -1,0 +1,69 @@
+﻿@using Microsoft.AspNet.Identity
+@model Snippy.App.Models.ViewModels.SnippetDetailsViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<h2>
+    @Html.ActionLink(Model.Language.Name, "Details", "Language", new {id = Model.Language.Id}, new {@class = "btn btn-success"})
+    @ViewBag.Title
+    @if (Context.User.Identity.GetUserId() == Model.Author.Id)
+    {
+        @Html.ActionLink("Edit", "Edit", "Snippet", new { id = Model.Id }, new { @class = "btn btn-warning" })
+    }
+</h2>
+<p>
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> @Model.Author.UserName on @Model.CreationDateTime.ToString("dd.MM.yyyy hh:mm:ss")<br />
+    Labels:
+    <p class="btn-toolbar">@Html.DisplayFor(s => s.Labels)<br /></p>
+    @Model.Description
+</p>
+
+<pre  class="prettyprint">@Model.Code</pre>
+
+Comments:
+<div id="comments" class="row">
+    @if (Model.Comments.Any())
+    {
+        @Html.DisplayFor(s => s.Comments);
+    }
+    else
+    {
+        <br/>
+        <span>No Comments are available</span>
+    }
+</div>
+
+@if (Context.User.Identity.IsAuthenticated)
+{
+    <div class="row">
+        <h3>Add Comment</h3>
+        @using (Ajax.BeginForm("AddComment", "Snippet", new { id = Model.Id }, new AjaxOptions()
+        {
+            HttpMethod = "POST",
+            InsertionMode = InsertionMode.InsertBefore,
+            UpdateTargetId = "comments",
+            OnSuccess = "onAddCommentSuccess"
+        }))
+        {
+            @Html.AntiForgeryToken()
+            <input type="text" name="Content" value="" id="Content" />
+            <input type="submit" name="submit" value="Add comment" />
+        }
+    </div>
+}
+
+@section scripts {
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        function onAddCommentSuccess() {
+            document.getElementById("Content").value = "";
+        }
+    </script>
+}
+
+

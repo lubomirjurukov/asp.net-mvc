@@ -1,0 +1,16 @@
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Snippy.App.Data.dll.config
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Snippy.App.Data.dll
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Snippy.App.Data.pdb
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\EntityFramework.dll
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Snippy.App.Model.dll
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Snippy.App.Model.pdb
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\EntityFramework.xml
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\obj\Debug\Snippy.App.Data.csprojResolveAssemblyReference.cache
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\obj\Debug\Snippy.App.Data.dll
+D:\projects\softuniexam\SoftUni-ASP.NET-MVC-master\Snippy\Snippy.App.Data\obj\Debug\Snippy.App.Data.pdb

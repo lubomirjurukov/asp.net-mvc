@@ -1,0 +1,22 @@
+﻿using System.Linq;
+
+namespace Snippy.App.Data.Repository
+{
+    public interface IRepository<T>
+    {
+        IQueryable<T> All();
+
+        T Find(object id);
+
+        void Add(T entity);
+
+        void Update(T entity);
+
+        void Remove(T entity);
+
+        T Remove(object id);
+
+        void SaveChanges();
+    }
+
+}
